@@ -150,7 +150,7 @@ class Queue:
         self.size += 1
 
     def dequeue(self):
-        if not self.storage.head:
+        if self.size < 1:
             return
         else:
             self.size -= 1

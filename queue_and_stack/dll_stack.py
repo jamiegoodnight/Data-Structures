@@ -151,7 +151,7 @@ class Stack:
         self.size += 1
 
     def pop(self):
-        if not self.storage.head:
+        if self.size < 1:
             return
         else:
             self.size -= 1
